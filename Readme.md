@@ -14,4 +14,4 @@ Loyihani ishga tushirish uchun quyidagi qadamlarni bajaring:
 
 1. Repozitoriyani klonlang:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/TheIlyosTV/Reserve-a-Table.git
