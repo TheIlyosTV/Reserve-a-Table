@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve a Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reserve a Table</h1>
+  </header>
+
+  <!-- Reserve Table Form -->
+  <section class="reservation-section">
+    <h2>Step 1: Reservation Details</h2>
+    <form id="reservationForm">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="diners">Number of Diners:</label>
+      <input type="number" id="diners" min="1" max="20" required>
+
+      <button type="button" id="nextStep">Next Step</button>
+    </form>
+  </section>
+
+  <!-- Customer Details Form -->
+  <section class="customer-details-section hidden">
+    <h2>Step 2: Your Details</h2>
+    <form id="customerForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+
+      <label for="contact">Contact Information:</label>
+      <input type="email" id="contact" placeholder="Email or Phone" required>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
